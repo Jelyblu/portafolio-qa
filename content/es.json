@@ -20,8 +20,8 @@
       "titulo": "Bubble Hero",
       "tipo": "Juego propio · Android y Steam.",
       "parrafos": [
-        "Cocreé Bubble Hero y lideré su aseguramiento de calidad (QA): lo llevamos de un prototipo de 48 horas en la Global Game Jam, donde quedó en el Top 6 de la sede UPB Medellín, a un lanzamiento público en Google Play y en Steam.",
-        "Me encargué de probar y ajustar los sistemas de juego, la progresión y el balance de dificultad de un juego de supervivencia por oleadas, para que la curva fuera justa desde la primera partida."
+        "Lideré el aseguramiento de calidad (QA) de Bubble Hero, que pasó de un prototipo de 48 horas en la Global Game Jam, donde quedó en el Top 6 de la sede UPB Medellín, a un lanzamiento público en Google Play y en Steam.",
+        "Me encargué de probar los sistemas de juego, la progresión y el balance de dificultad de un juego de supervivencia por oleadas, para que la curva fuera justa desde la primera partida."
       ],
       "apps": [
         "Unity",
@@ -166,7 +166,7 @@
       "titulo": "Rooftop Visa",
       "tipo": "Realidad Virtual.",
       "parrafos": [
-        "En el desarrollo del entorno virtual en VR Chat para VISA, lideré el equipo de aseguramiento de calidad (QA) y también participé en el desarrollo. Optimicé modelos 3D y realicé pruebas exhaustivas para asegurar que todas las funcionalidades operaran sin problemas. Este espacio virtual está diseñado para que VISA pueda llevar a cabo eventos y exhibir sus nuevos productos de manera efectiva."
+        "En el entorno virtual en VR Chat para VISA, lideré el equipo de aseguramiento de calidad (QA) y realicé pruebas exhaustivas para asegurar que todas las funcionalidades operaran sin problemas. Este espacio virtual está diseñado para que VISA pueda llevar a cabo eventos y exhibir sus nuevos productos de manera efectiva."
       ],
       "apps": [
         "C#",
@@ -182,7 +182,7 @@
       "titulo": "Lupa",
       "tipo": "Aplicativo móvil.",
       "parrafos": [
-        "Lupa es un proyecto de investigación donde lideré el aseguramiento de calidad (QA). Desarrollamos una plataforma que permite recorrer la ciudad de Medellín utilizando joystick o GPS.",
+        "Lupa es un proyecto de investigación donde lideré el aseguramiento de calidad (QA). Es una plataforma que permite recorrer la ciudad de Medellín utilizando joystick o GPS.",
         "Los usuarios pueden crear y recuperar recuerdos en forma de textos, imágenes o audios, que se convierten en patrimonios. Implementé pruebas detalladas para asegurar una experiencia inmersiva y funcional, permitiendo a los jugadores crear rutas entre patrimonios y recuerdos para que otros usuarios las recorran."
       ],
       "apps": [
@@ -231,7 +231,7 @@
       "titulo": "Baby Fresh: Sueños de Colores",
       "tipo": "Instalación físico-digital en vivo.",
       "parrafos": [
-        "Construí y probé Sueños de Colores, una instalación físico-digital para Baby Fresh: niños y niñas colorean un osito en papel, lo meten en una instalación con forma de horno y ven su propio dibujo cobrar vida en un mundo virtual compartido, en una pantalla grande.",
+        "Probé Sueños de Colores, una instalación físico-digital para Baby Fresh: niños y niñas colorean un osito en papel, lo meten en una instalación con forma de horno y ven su propio dibujo cobrar vida en un mundo virtual compartido, en una pantalla grande.",
         "Las pruebas se centraron en lo que una instalación en vivo no perdona: la latencia, para que cada niño conectara lo que dibujó con lo que veía en pantalla, y la tolerancia a dibujos reales, hechos fuera de las líneas, sin que el sistema fallara frente al público."
       ],
       "apps": [

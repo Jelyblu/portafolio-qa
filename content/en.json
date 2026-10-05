@@ -20,8 +20,8 @@
       "titulo": "Bubble Hero",
       "tipo": "Own title · Android and Steam.",
       "parrafos": [
-        "I co-created Bubble Hero and led its quality assurance (QA): we took it from a 48-hour Global Game Jam prototype, which placed Top 6 at the UPB Medellín site, to a public release on Google Play and Steam.",
-        "I tested and tuned the gameplay systems, progression and difficulty balance of a wave-survival game, so the curve felt fair from the very first run."
+        "I led quality assurance (QA) for Bubble Hero, which went from a 48-hour Global Game Jam prototype, which placed Top 6 at the UPB Medellín site, to a public release on Google Play and Steam.",
+        "I tested the gameplay systems, progression and difficulty balance of a wave-survival game, so the curve felt fair from the very first run."
       ],
       "apps": [
         "Unity",
@@ -166,7 +166,7 @@
       "titulo": "Rooftop Visa",
       "tipo": "Virtual Reality.",
       "parrafos": [
-        "In the development of the virtual environment in VR Chat for VISA, I led the quality assurance (QA) team and also participated in development. I optimized 3D models and conducted comprehensive testing to ensure that all features operated smoothly. This virtual space is designed for VISA to effectively host events and showcase its new products."
+        "In the virtual environment in VR Chat for VISA, I led the quality assurance (QA) team and conducted comprehensive testing to ensure that all features operated smoothly. This virtual space is designed for VISA to effectively host events and showcase its new products."
       ],
       "apps": [
         "C#",
@@ -182,7 +182,7 @@
       "titulo": "Lupa",
       "tipo": "Mobile application.",
       "parrafos": [
-        "Lupa is a research project where I led quality assurance (QA). We developed a platform that allows exploring the city of Medellín using a joystick or GPS.",
+        "Lupa is a research project where I led quality assurance (QA). It is a platform that allows exploring the city of Medellín using a joystick or GPS.",
         "Users can create and retrieve memories in the form of text, images, or audio, which become heritage items. I implemented detailed testing to ensure an immersive and functional experience, allowing players to create routes between heritage items and memories for other users to explore."
       ],
       "apps": [
@@ -231,7 +231,7 @@
       "titulo": "Baby Fresh: Sueños de Colores",
       "tipo": "Live physical-digital installation.",
       "parrafos": [
-        "I built and tested Sueños de Colores, a physical-digital installation for Baby Fresh: children color a teddy bear on paper, put it into an oven-shaped installation, and watch their own drawing come to life in a shared virtual world on a big screen.",
+        "I tested Sueños de Colores, a physical-digital installation for Baby Fresh: children color a teddy bear on paper, put it into an oven-shaped installation, and watch their own drawing come to life in a shared virtual world on a big screen.",
         "Testing focused on what a live installation does not forgive: latency, so each child connected what they drew with what they saw on screen, and tolerance for real drawings made outside the lines, without the system failing in front of an audience."
       ],
       "apps": [

@@ -322,7 +322,6 @@ def pagina(lang, t):
                         <a class="btn btn-secondary" href="https://dragonarkstudios.itch.io" target="_blank" rel="noopener">itch.io</a>
                         <a class="btn btn-secondary" href="https://www.fiverr.com/angibuiles" target="_blank" rel="noopener">Fiverr</a>
                         <a class="btn btn-secondary" href="{ui['estudio_url']}" target="_blank" rel="noopener">{ui['estudio']}</a>
-                        <a class="btn btn-secondary" href="{ui['otro_portafolio_url']}">{ui['otro_portafolio']}</a>
                     </div>
                 </div>
             </div>
