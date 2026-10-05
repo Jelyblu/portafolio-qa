@@ -33,10 +33,12 @@ CAPTURAS = {
 UI = {
     "es": {"otro": "en", "otro_nombre": "English", "contacto": "Contacto",
            "captura": "captura", "cerrar": "Cerrar video", "contactame": "Contáctame",
-           "estudio": "Portafolio del estudio", "estudio_url": "https://dragonarkstudios.com/es/portfolio"},
+           "estudio": "Portafolio del estudio", "estudio_url": "https://dragonarkstudios.com/es/portfolio",
+           "otro_portafolio": "Portafolio de desarrollo", "otro_portafolio_url": "https://jelyblu.github.io/portafolio-dev/es/"},
     "en": {"otro": "es", "otro_nombre": "Español", "contacto": "Contact",
            "captura": "screenshot", "cerrar": "Close video", "contactame": "Contact me",
-           "estudio": "Studio portfolio", "estudio_url": "https://dragonarkstudios.com/portfolio"},
+           "estudio": "Studio portfolio", "estudio_url": "https://dragonarkstudios.com/portfolio",
+           "otro_portafolio": "Dev portfolio", "otro_portafolio_url": "https://jelyblu.github.io/portafolio-dev/en/"},
 }
 
 CSS = r"""
@@ -320,6 +322,7 @@ def pagina(lang, t):
                         <a class="btn btn-secondary" href="https://dragonarkstudios.itch.io" target="_blank" rel="noopener">itch.io</a>
                         <a class="btn btn-secondary" href="https://www.fiverr.com/angibuiles" target="_blank" rel="noopener">Fiverr</a>
                         <a class="btn btn-secondary" href="{ui['estudio_url']}" target="_blank" rel="noopener">{ui['estudio']}</a>
+                        <a class="btn btn-secondary" href="{ui['otro_portafolio_url']}">{ui['otro_portafolio']}</a>
                     </div>
                 </div>
             </div>
