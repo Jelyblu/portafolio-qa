@@ -1,0 +1,249 @@
+{
+  "portada": {
+    "titulo": "PORTAFOLIO",
+    "subtitulo": "FortniteQA2024",
+    "anio": "2024",
+    "ciudad": "Medellín - Colombia",
+    "telefono": "301 371 35 18"
+  },
+  "etiquetas": {
+    "apps": "Aplicaciones usadas",
+    "video": "Video",
+    "descarga": "Descargala aquí",
+    "cierre": "¡GRACIAS!",
+    "web": "Ver la versión web",
+    "isla": "Ver la isla"
+  },
+  "proyectos": [
+    {
+      "id": "bubblehero",
+      "titulo": "Bubble Hero",
+      "tipo": "Juego propio · Android y Steam.",
+      "parrafos": [
+        "Cocreé Bubble Hero y lideré su aseguramiento de calidad (QA): lo llevamos de un prototipo de 48 horas en la Global Game Jam, donde quedó en el Top 6 de la sede UPB Medellín, a un lanzamiento público en Google Play y en Steam.",
+        "Me encargué de probar y ajustar los sistemas de juego, la progresión y el balance de dificultad de un juego de supervivencia por oleadas, para que la curva fuera justa desde la primera partida."
+      ],
+      "apps": [
+        "Unity",
+        "C#",
+        "Android",
+        "Steam"
+      ],
+      "enlaces": [
+        [
+          "Ver en Steam",
+          "https://store.steampowered.com/app/4517050/Bubble_Hero_The_Five_Elements/"
+        ],
+        [
+          "Ver en Google Play",
+          "https://play.google.com/store/apps/details?id=com.DragonarkStudios.BubbleHero"
+        ]
+      ]
+    },
+    {
+      "id": "trident",
+      "titulo": "Trident X Jungle",
+      "tipo": "Juego Publicitario",
+      "parrafos": [
+        "He liderado el aseguramiento de calidad (QA) en el desarrollo de una isla única utilizando el editor creativo de Fortnite para Trident, con el propósito de llevar a cabo un evento a nivel mundial.",
+        "Durante el proceso, supervisé pruebas exhaustivas para asegurar la funcionalidad y estabilidad de la isla, que incluye una variedad de minijuegos y culmina en una apasionante batalla contra un jefe final.",
+        "Este evento no solo fortaleció la presencia de la marca Trident, sino que también ofreció emocionantes premios y actividades."
+      ],
+      "apps": [
+        "HacknPlan",
+        "Google Sheets",
+        "Unreal Engine",
+        "Fortnite"
+      ],
+      "video": "https://www.youtube.com/watch?v=4GxoQf84Vz8"
+    },
+    {
+      "id": "ecovilla",
+      "titulo": "Ecovilla 4D",
+      "tipo": "Realidad aumentada, realidad virtual, web y móvil.",
+      "parrafos": [
+        "Lideré el equipo de aseguramiento de calidad (QA) de Ecovilla 4D, una macroexperiencia 360 desarrollada con Ecopetrol y la UPB alrededor de una casa sostenible del futuro. Planifiqué y supervisé pruebas funcionales y de compatibilidad en realidad aumentada, realidad virtual, web y móvil, verificando que el recorrido completo, desde el código QR hasta cada experiencia, funcionara de forma estable en cada plataforma.",
+        "El ecosistema que probamos incluía cinco aplicaciones de realidad aumentada web que se abren desde un código QR sin descargar nada, dos aplicaciones de realidad virtual, un recorrido web interactivo para móvil con minijuegos y una aplicación para tableta con visualización 3D."
+      ],
+      "apps": [
+        "Unity",
+        "Unreal Engine",
+        "WebAR",
+        "VR"
+      ],
+      "video": "https://youtu.be/UNXelOfm4Hc",
+      "web": "https://jelyblu.github.io/EcoVillaVirtual/"
+    },
+    {
+      "id": "dominos",
+      "titulo": "Domino's Red vs Blue",
+      "tipo": "Isla de marca en Fortnite.",
+      "parrafos": [
+        "Como líder de QA y consultora en Dead Monkey, trabajando junto a Look North World, planifiqué y ejecuté las pruebas de la isla de Domino's en Fortnite: combate por equipos con captura del restaurante, potenciadores, progresión y logros.",
+        "Hice pruebas funcionales, de balance y de estabilidad, con verificación de correcciones en dos etapas antes de cada entrega, para que la isla saliera en vivo cumpliendo los estándares de certificación de Epic Games."
+      ],
+      "apps": [
+        "UEFN",
+        "Fortnite Creative"
+      ],
+      "isla": "https://www.fortnite.com/@twitchofficial/5570-6554-5104"
+    },
+    {
+      "id": "roadtest",
+      "titulo": "Road Test Royale",
+      "tipo": "Isla de marca en Fortnite para The General.",
+      "parrafos": [
+        "Llevé el control de calidad de Road Test Royale, la isla de The General en Fortnite: un circuito de manejo con sistemas de tiempo y penalizaciones, tres ciudades y desbloqueo de vehículos.",
+        "Diseñé los planes de prueba y verifiqué que los tiempos, las penalizaciones y el progreso funcionaran de forma consistente en cada ciudad antes del lanzamiento."
+      ],
+      "apps": [
+        "UEFN",
+        "Fortnite Creative"
+      ],
+      "isla": "https://www.fortnite.com/@twitchofficial/9524-2023-3031"
+    },
+    {
+      "id": "glitch",
+      "titulo": "The Glitch Zone Wars",
+      "tipo": "Isla de marca en Fortnite para Twitch.",
+      "parrafos": [
+        "Lideré las pruebas de The Glitch Zone Wars, la isla de Twitch en Fortnite lanzada en la TwitchCon 2024: escuadras de hasta 16 jugadores, rondas por objetivos, armas aleatorias y progresión por XP.",
+        "Me enfoqué en el balance de las armas, el flujo de las rondas y la estabilidad del servidor con partidas llenas, para que el evento funcionara sin caídas en vivo."
+      ],
+      "apps": [
+        "UEFN",
+        "Fortnite Creative"
+      ],
+      "isla": "https://www.fortnite.com/@twitchofficial/1657-2632-4431"
+    },
+    {
+      "id": "guesswho",
+      "titulo": "Guess Who",
+      "tipo": "Colección de Hasbro en Fortnite.",
+      "parrafos": [
+        "Gestioné el control de calidad de las islas de la colección de Hasbro en Fortnite, Guess Who y Connect Four, recreaciones de los juegos de mesa clásicos desarrolladas por Look North World.",
+        "Verifiqué que cada isla fuera estable, rindiera bien y cumpliera los estándares de Epic Games antes de salir en vivo."
+      ],
+      "apps": [
+        "UEFN",
+        "Fortnite Creative"
+      ],
+      "isla": "https://www.fortnite.com/@looknorthworld/7387-6907-3174"
+    },
+    {
+      "id": "interactivehome",
+      "titulo": "Interactivehome",
+      "tipo": "Aplicativo móvil.",
+      "parrafos": [
+        "Lideré el equipo de aseguramiento de calidad (QA) en el desarrollo de Interactivehome, una innovadora plataforma que permite a los compradores de apartamentos visualizar y personalizar su futuro hogar. Supervisé rigurosamente cada etapa del proceso, implementando pruebas unitarias, de integración y de usabilidad para identificar y corregir errores antes del lanzamiento. Colaboré estrechamente con los desarrolladores, asegurando que todas las correcciones se implementaran eficientemente. También mantuve documentación detallada de las pruebas, facilitando la comunicación y garantizando el cumplimiento de los más altos estándares de calidad."
+      ],
+      "apps": [
+        "C#",
+        "Unity",
+        "HacknPlan",
+        "Google Sheets"
+      ],
+      "video": "https://www.youtube.com/watch?v=4GxoQf84Vz8"
+    },
+    {
+      "id": "metau",
+      "titulo": "Meta U",
+      "tipo": "Realidad virtual.",
+      "parrafos": [
+        "En MetaU, un proyecto desarrollado para UPB VIRTUAL, lideré el aseguramiento de calidad (QA) para garantizar que la plataforma preparara y validara los conocimientos de los estudiantes del curso de inducción a la virtualidad. Implementé y supervisé pruebas detalladas para asegurar el correcto funcionamiento de una serie de minijuegos en Meta Quest 2, así como la personalización de espacios y la experiencia tipo metaverso."
+      ],
+      "apps": [
+        "C#",
+        "Unity",
+        "HacknPlan",
+        "Oculus",
+        "Google Sheets"
+      ],
+      "video": "https://www.youtube.com/watch?v=uDqV6fU3cC8"
+    },
+    {
+      "id": "rooftop",
+      "titulo": "Rooftop Visa",
+      "tipo": "Realidad Virtual.",
+      "parrafos": [
+        "En el desarrollo del entorno virtual en VR Chat para VISA, lideré el equipo de aseguramiento de calidad (QA) y también participé en el desarrollo. Optimicé modelos 3D y realicé pruebas exhaustivas para asegurar que todas las funcionalidades operaran sin problemas. Este espacio virtual está diseñado para que VISA pueda llevar a cabo eventos y exhibir sus nuevos productos de manera efectiva."
+      ],
+      "apps": [
+        "C#",
+        "Unity",
+        "HacknPlan",
+        "VRChat",
+        "Google Sheets"
+      ],
+      "video": "https://www.youtube.com/watch?v=r58cvnKIQz0"
+    },
+    {
+      "id": "lupa",
+      "titulo": "Lupa",
+      "tipo": "Aplicativo móvil.",
+      "parrafos": [
+        "Lupa es un proyecto de investigación donde lideré el aseguramiento de calidad (QA). Desarrollamos una plataforma que permite recorrer la ciudad de Medellín utilizando joystick o GPS.",
+        "Los usuarios pueden crear y recuperar recuerdos en forma de textos, imágenes o audios, que se convierten en patrimonios. Implementé pruebas detalladas para asegurar una experiencia inmersiva y funcional, permitiendo a los jugadores crear rutas entre patrimonios y recuerdos para que otros usuarios las recorran."
+      ],
+      "apps": [
+        "C#",
+        "Unity",
+        "HacknPlan",
+        "Google Sheets"
+      ],
+      "video": "https://youtu.be/YpwlZE0v04w"
+    },
+    {
+      "id": "80s",
+      "titulo": "80´s Street Games",
+      "tipo": "Aplicativo desktop.",
+      "parrafos": [
+        "80s Street Game es un juego con estética pixel art que te transporta a la época de los años 80, cuando los juegos antiguos empezaban a popularizarse. El objetivo del jugador es vender copias de los juegos en formatos cúbicos a los personajes que se acercan a su tienda, y encontrar el juego perfecto para cada uno de ellos. Sin embargo, también es necesario estar atento a los policías que buscan atraparte por piratería y evitar venderles copias ilegales."
+      ],
+      "apps": [
+        "C#",
+        "Unity",
+        "HacknPlan",
+        "Google Sheets"
+      ],
+      "video": "https://www.youtube.com/watch?v=4xa75kQLs4A",
+      "descarga": "https://aseisgames.itch.io/80s-street-games"
+    },
+    {
+      "id": "mythpets",
+      "titulo": "Myth Pets",
+      "tipo": "Aplicativo móvil.",
+      "parrafos": [
+        "MYTH PETS es un juego móvil desarrollado para enseñar mitología griega a través de la recolección de objetos mitológicos.",
+        "Lideré el aseguramiento de calidad (QA), supervisando pruebas exhaustivas para garantizar que todas las funcionalidades, desde los minijuegos hasta la colección de objetos, operaran sin problemas.",
+        "Mi trabajo aseguró una experiencia educativa y entretenida para los usuarios dentro del marco de la educación tecnológica (edutech)."
+      ],
+      "apps": [
+        "C#",
+        "Unity",
+        "HacknPlan",
+        "Google Sheets"
+      ],
+      "video": "https://www.youtube.com/watch?v=yEkY36VHkOU"
+    },
+    {
+      "id": "babyfresh",
+      "titulo": "Baby Fresh: Sueños de Colores",
+      "tipo": "Instalación físico-digital en vivo.",
+      "parrafos": [
+        "Construí y probé Sueños de Colores, una instalación físico-digital para Baby Fresh: niños y niñas colorean un osito en papel, lo meten en una instalación con forma de horno y ven su propio dibujo cobrar vida en un mundo virtual compartido, en una pantalla grande.",
+        "Las pruebas se centraron en lo que una instalación en vivo no perdona: la latencia, para que cada niño conectara lo que dibujó con lo que veía en pantalla, y la tolerancia a dibujos reales, hechos fuera de las líneas, sin que el sistema fallara frente al público."
+      ],
+      "apps": [
+        "Unity",
+        "Real-time"
+      ],
+      "enlaces": [
+        [
+          "Ver el video",
+          "https://www.instagram.com/reel/DP_5Ftrjhip"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "portada": {
+    "titulo": "PORTFOLIO",
+    "subtitulo": "FortniteQA2024",
+    "anio": "2024",
+    "ciudad": "Medellín - Colombia",
+    "telefono": "301 371 35 18"
+  },
+  "etiquetas": {
+    "apps": "Applications used",
+    "video": "Video",
+    "descarga": "Download it here",
+    "cierre": "THANK YOU!",
+    "web": "Try the web version",
+    "isla": "See the island"
+  },
+  "proyectos": [
+    {
+      "id": "bubblehero",
+      "titulo": "Bubble Hero",
+      "tipo": "Own title · Android and Steam.",
+      "parrafos": [
+        "I co-created Bubble Hero and led its quality assurance (QA): we took it from a 48-hour Global Game Jam prototype, which placed Top 6 at the UPB Medellín site, to a public release on Google Play and Steam.",
+        "I tested and tuned the gameplay systems, progression and difficulty balance of a wave-survival game, so the curve felt fair from the very first run."
+      ],
+      "apps": [
+        "Unity",
+        "C#",
+        "Android",
+        "Steam"
+      ],
+      "enlaces": [
+        [
+          "See it on Steam",
+          "https://store.steampowered.com/app/4517050/Bubble_Hero_The_Five_Elements/"
+        ],
+        [
+          "See it on Google Play",
+          "https://play.google.com/store/apps/details?id=com.DragonarkStudios.BubbleHero"
+        ]
+      ]
+    },
+    {
+      "id": "trident",
+      "titulo": "Trident X Jungle",
+      "tipo": "Advertising Game",
+      "parrafos": [
+        "I led quality assurance (QA) in the development of a unique island using the Fortnite creative editor for Trident, with the purpose of carrying out a worldwide event.",
+        "During the process, I oversaw comprehensive testing to ensure the functionality and stability of the island, which includes a variety of minigames and culminates in an exciting final boss battle.",
+        "This event not only strengthened the Trident brand presence, but also offered exciting prizes and activities."
+      ],
+      "apps": [
+        "HacknPlan",
+        "Google Sheets",
+        "Unreal Engine",
+        "Fortnite"
+      ],
+      "video": "https://www.youtube.com/watch?v=4GxoQf84Vz8"
+    },
+    {
+      "id": "ecovilla",
+      "titulo": "Ecovilla 4D",
+      "tipo": "Augmented reality, virtual reality, web and mobile.",
+      "parrafos": [
+        "I led the quality assurance (QA) team for Ecovilla 4D, a 360 macro-experience developed with Ecopetrol and UPB around a sustainable house of the future. I planned and oversaw functional and compatibility testing on augmented reality, virtual reality, web and mobile, verifying that the full journey, from the QR code to each experience, ran reliably on every platform.",
+        "The ecosystem we tested included five web augmented reality apps that open from a QR code with no download, two virtual reality apps, an interactive mobile web journey with minigames, and a tablet app with 3D visualization."
+      ],
+      "apps": [
+        "Unity",
+        "Unreal Engine",
+        "WebAR",
+        "VR"
+      ],
+      "video": "https://youtu.be/UNXelOfm4Hc",
+      "web": "https://jelyblu.github.io/EcoVillaVirtual/"
+    },
+    {
+      "id": "dominos",
+      "titulo": "Domino's Red vs Blue",
+      "tipo": "Branded Fortnite island.",
+      "parrafos": [
+        "As QA lead and consultant at Dead Monkey, working alongside Look North World, I planned and ran testing for Domino's island in Fortnite: team combat with restaurant capture, power-ups, progression and achievements.",
+        "I ran functional, balance and stability testing, with two-stage fix verification before every delivery, so the island went live meeting Epic Games certification standards."
+      ],
+      "apps": [
+        "UEFN",
+        "Fortnite Creative"
+      ],
+      "isla": "https://www.fortnite.com/@twitchofficial/5570-6554-5104"
+    },
+    {
+      "id": "roadtest",
+      "titulo": "Road Test Royale",
+      "tipo": "Branded Fortnite island for The General.",
+      "parrafos": [
+        "I led quality control for Road Test Royale, The General's island in Fortnite: a driving course with timing and penalty systems, three cities and vehicle unlocks.",
+        "I designed the test plans and verified that timing, penalties and progression worked consistently in every city before launch."
+      ],
+      "apps": [
+        "UEFN",
+        "Fortnite Creative"
+      ],
+      "isla": "https://www.fortnite.com/@twitchofficial/9524-2023-3031"
+    },
+    {
+      "id": "glitch",
+      "titulo": "The Glitch Zone Wars",
+      "tipo": "Branded Fortnite island for Twitch.",
+      "parrafos": [
+        "I led testing for The Glitch Zone Wars, Twitch's Fortnite island launched at TwitchCon 2024: squads of up to 16 players, objective-based rounds, random weapons and XP progression.",
+        "I focused on weapon balance, round flow and server stability with full lobbies, so the event ran live without crashes."
+      ],
+      "apps": [
+        "UEFN",
+        "Fortnite Creative"
+      ],
+      "isla": "https://www.fortnite.com/@twitchofficial/1657-2632-4431"
+    },
+    {
+      "id": "guesswho",
+      "titulo": "Guess Who",
+      "tipo": "Hasbro collection in Fortnite.",
+      "parrafos": [
+        "I managed quality control for the Hasbro collection islands in Fortnite, Guess Who and Connect Four, recreations of the classic board games developed by Look North World.",
+        "I verified that each island was stable, performed well and met Epic Games standards before going live."
+      ],
+      "apps": [
+        "UEFN",
+        "Fortnite Creative"
+      ],
+      "isla": "https://www.fortnite.com/@looknorthworld/7387-6907-3174"
+    },
+    {
+      "id": "interactivehome",
+      "titulo": "Interactivehome",
+      "tipo": "Mobile application.",
+      "parrafos": [
+        "I led the quality assurance (QA) team in the development of Interactivehome, an innovative platform that allows apartment buyers to visualize and customize their future home. I rigorously oversaw every stage of the process, implementing unit, integration, and usability testing to identify and correct bugs before launch. I collaborated closely with developers, ensuring that all fixes were implemented efficiently. I also maintained detailed test documentation, facilitating communication and guaranteeing compliance with the highest quality standards."
+      ],
+      "apps": [
+        "C#",
+        "Unity",
+        "HacknPlan",
+        "Google Sheets"
+      ],
+      "video": "https://www.youtube.com/watch?v=4GxoQf84Vz8"
+    },
+    {
+      "id": "metau",
+      "titulo": "Meta U",
+      "tipo": "Virtual reality.",
+      "parrafos": [
+        "At MetaU, a project developed for UPB VIRTUAL, I led quality assurance (QA) to ensure that the platform prepared and validated the knowledge of students in the induction course on virtual learning. I implemented and oversaw detailed testing to ensure the proper functioning of a series of minigames on Meta Quest 2, as well as space customization and the metaverse-style experience."
+      ],
+      "apps": [
+        "C#",
+        "Unity",
+        "HacknPlan",
+        "Oculus",
+        "Google Sheets"
+      ],
+      "video": "https://www.youtube.com/watch?v=uDqV6fU3cC8"
+    },
+    {
+      "id": "rooftop",
+      "titulo": "Rooftop Visa",
+      "tipo": "Virtual Reality.",
+      "parrafos": [
+        "In the development of the virtual environment in VR Chat for VISA, I led the quality assurance (QA) team and also participated in development. I optimized 3D models and conducted comprehensive testing to ensure that all features operated smoothly. This virtual space is designed for VISA to effectively host events and showcase its new products."
+      ],
+      "apps": [
+        "C#",
+        "Unity",
+        "HacknPlan",
+        "VRChat",
+        "Google Sheets"
+      ],
+      "video": "https://www.youtube.com/watch?v=r58cvnKIQz0"
+    },
+    {
+      "id": "lupa",
+      "titulo": "Lupa",
+      "tipo": "Mobile application.",
+      "parrafos": [
+        "Lupa is a research project where I led quality assurance (QA). We developed a platform that allows exploring the city of Medellín using a joystick or GPS.",
+        "Users can create and retrieve memories in the form of text, images, or audio, which become heritage items. I implemented detailed testing to ensure an immersive and functional experience, allowing players to create routes between heritage items and memories for other users to explore."
+      ],
+      "apps": [
+        "C#",
+        "Unity",
+        "HacknPlan",
+        "Google Sheets"
+      ],
+      "video": "https://youtu.be/YpwlZE0v04w"
+    },
+    {
+      "id": "80s",
+      "titulo": "80´s Street Games",
+      "tipo": "Desktop application.",
+      "parrafos": [
+        "80s Street Game is a game with a pixel art aesthetic that transports you to the 1980s, when retro games were beginning to gain popularity. The player's goal is to sell copies of games in cubic formats to characters who approach their shop, and find the perfect game for each of them. However, it is also necessary to stay alert for police officers looking to catch you for piracy and avoid selling them illegal copies."
+      ],
+      "apps": [
+        "C#",
+        "Unity",
+        "HacknPlan",
+        "Google Sheets"
+      ],
+      "video": "https://www.youtube.com/watch?v=4xa75kQLs4A",
+      "descarga": "https://aseisgames.itch.io/80s-street-games"
+    },
+    {
+      "id": "mythpets",
+      "titulo": "Myth Pets",
+      "tipo": "Mobile application.",
+      "parrafos": [
+        "MYTH PETS is a mobile game developed to teach Greek mythology through collecting mythological items.",
+        "I led quality assurance (QA), overseeing comprehensive testing to guarantee that all features, from minigames to the item collection, operated smoothly.",
+        "My work ensured an educational and entertaining experience for users within the educational technology (edutech) framework."
+      ],
+      "apps": [
+        "C#",
+        "Unity",
+        "HacknPlan",
+        "Google Sheets"
+      ],
+      "video": "https://www.youtube.com/watch?v=yEkY36VHkOU"
+    },
+    {
+      "id": "babyfresh",
+      "titulo": "Baby Fresh: Sueños de Colores",
+      "tipo": "Live physical-digital installation.",
+      "parrafos": [
+        "I built and tested Sueños de Colores, a physical-digital installation for Baby Fresh: children color a teddy bear on paper, put it into an oven-shaped installation, and watch their own drawing come to life in a shared virtual world on a big screen.",
+        "Testing focused on what a live installation does not forgive: latency, so each child connected what they drew with what they saw on screen, and tolerance for real drawings made outside the lines, without the system failing in front of an audience."
+      ],
+      "apps": [
+        "Unity",
+        "Real-time"
+      ],
+      "enlaces": [
+        [
+          "Watch the video",
+          "https://www.instagram.com/reel/DP_5Ftrjhip"
+        ]
+      ]
+    }
+  ]
+}

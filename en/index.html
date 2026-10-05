@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO · Angelina Builes</title>
+    <meta name="description" content="Portfolio QA · Angelina Builes. Bubble Hero, Trident X Jungle, Ecovilla 4D, Domino&#x27;s Red vs Blue, Road Test Royale, The Glitch Zone Wars, Guess Who, Interactivehome, Meta U, Rooftop Visa, Lupa, 80´s Street Games, Myth Pets, Baby Fresh: Sueños de Colores.">
+    <link rel="canonical" href="https://jelyblu.github.io/portafolio-qa/en/">
+    <link rel="alternate" hreflang="es" href="https://jelyblu.github.io/portafolio-qa/es/">
+    <link rel="alternate" hreflang="en" href="https://jelyblu.github.io/portafolio-qa/en/">
+    <link rel="alternate" hreflang="x-default" href="https://jelyblu.github.io/portafolio-qa/es/">
+    <meta property="og:title" content="PORTFOLIO · Angelina Builes">
+    <meta property="og:description" content="Portfolio QA · Angelina Builes. Bubble Hero, Trident X Jungle, Ecovilla 4D, Domino&#x27;s Red vs Blue, Road Test Royale, The Glitch Zone Wars, Guess Who, Interactivehome, Meta U, Rooftop Visa, Lupa, 80´s Street Games, Myth Pets, Baby Fresh: Sueños de Colores.">
+    <meta property="og:image" content="https://jelyblu.github.io/portafolio-qa/assets/img/trident-1.jpg">
+    <meta property="og:type" content="profile">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,700;0,900;1,700;1,900&family=Montserrat:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .profile-page {
+            --ab-cyan: #00e5ff; --ab-ink: #e8eeff; --ab-dim: #8f9cbc; --ab-faint: #5d6a8a;
+            --ab-line: rgba(255, 255, 255, .09); --ab-surface: #0e1017; --ab-raised: #12141f;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .profile-page h1, .profile-page h2, .profile-page h3 { font-family: 'Exo 2', sans-serif; }
+        .ab-notch { clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%); }
+
+        .ab-hero { padding: 8.5rem 0 3.5rem; }
+        .ab-hero-grid { max-width: 900px; }
+        .ab-eyebrow {
+            font-family: 'Exo 2', sans-serif; font-size: .7rem; font-weight: 900; font-style: italic;
+            text-transform: uppercase; letter-spacing: .18em; color: var(--ab-cyan); margin: 0 0 1.1rem;
+        }
+        .ab-name { font-size: clamp(2.6rem, 7vw, 4.4rem); font-weight: 900; font-style: italic; text-transform: uppercase; letter-spacing: -.02em; line-height: .95; margin: 0 0 .9rem; color: var(--ab-ink); }
+        .ab-role { font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 700; color: var(--ab-cyan); line-height: 1.5; margin: 0 0 .7rem; }
+        .ab-meta { font-size: .88rem; color: var(--ab-faint); line-height: 1.7; margin: 0 0 1.5rem; }
+        .ab-links { display: flex; flex-wrap: wrap; gap: 1.4rem 1.1rem; }
+
+        .ab-work { padding: 3rem 0 0; }
+        .ab-featured { display: grid; gap: 1.5rem; }
+        .ab-feat {
+            display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+            background: var(--ab-surface); border: 1px solid var(--ab-line);
+            border-top: 1px solid rgba(0, 229, 255, .32);
+            transition: border-color .25s ease, transform .25s ease;
+            scroll-margin-top: 90px;
+        }
+        .ab-feat:hover { border-top-color: var(--ab-cyan); transform: translateY(-3px); }
+
+        /* Galería: la primera captura manda, las demás van en tira debajo,
+           igual que la columna de imágenes de cada página del PDF. */
+        .ab-shot {
+            display: grid; grid-template-rows: minmax(230px, 1fr) 120px; background: var(--ab-raised);
+            border-right: 1px solid var(--ab-line); overflow: hidden;
+        }
+        .ab-shot a { display: block; height: 100%; overflow: hidden; }
+        .ab-shot img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
+        .ab-shot a:hover img { transform: scale(1.04); }
+        /* La captura principal no empuja la altura: rellena lo que mida el texto.
+           Sin esto una captura vertical estira la tarjeta a más de 1000 px. */
+        .ab-shot-main { min-height: 0; position: relative; }
+        .ab-shot-main > a { position: absolute; inset: 0; }
+        .ab-shot--solo { grid-template-rows: minmax(260px, 1fr); }
+        /* Proyectos de móvil: las capturas son verticales y en una tira baja
+           solo se vería una franja. Se les da más alto. */
+        .ab-shot--movil { grid-template-rows: minmax(200px, 1fr) 240px; }
+        .ab-shot--movil .ab-shot-strip img { object-position: center top; }
+        .ab-shot-strip { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 1px; background: var(--ab-line); min-height: 0; border-top: 1px solid var(--ab-line); }
+
+        .ab-feat-body { padding: 2rem 2.2rem; }
+        .ab-feat h3 { font-size: 1.5rem; font-weight: 900; font-style: italic; text-transform: uppercase; letter-spacing: -.01em; color: var(--ab-ink); margin: 0 0 .45rem; }
+        .ab-context { font-size: .78rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ab-cyan); margin: 0 0 1.3rem; }
+        .ab-desc p { margin: 0 0 .9rem; font-size: .92rem; line-height: 1.75; color: var(--ab-dim); text-wrap: pretty; }
+        .ab-label {
+            font-family: 'Exo 2', sans-serif; font-size: .64rem; font-weight: 900; font-style: italic;
+            text-transform: uppercase; letter-spacing: .1em; color: var(--ab-faint); margin: 1.4rem 0 .55rem;
+        }
+        .ab-tech { display: flex; flex-wrap: wrap; gap: .3rem; }
+        .ab-tech span {
+            font-family: 'JetBrains Mono', monospace; font-size: .68rem; padding: .25rem .6rem;
+            border: 1px solid rgba(0, 229, 255, .26); color: var(--ab-cyan); letter-spacing: .03em;
+        }
+        .ab-out { display: inline-flex; gap: .35rem; margin-top: 1.3rem; margin-right: 1.4rem; color: var(--ab-ink); text-decoration: none; font-size: .84rem; font-weight: 700; border-bottom: 1px solid rgba(0, 229, 255, .4); padding-bottom: 2px; }
+        .ab-out:hover { color: var(--ab-cyan); border-bottom-color: var(--ab-cyan); }
+
+        .ab-cta { padding: 5rem 0 6rem; }
+        .ab-cta-inner {
+            border: 1px solid rgba(0, 229, 255, .28); border-top: 2px solid var(--ab-cyan);
+            background: radial-gradient(90% 140% at 50% 0%, rgba(0, 229, 255, .1) 0%, rgba(0, 229, 255, 0) 60%), var(--ab-surface);
+            padding: 3rem 2.5rem; text-align: center;
+        }
+        .ab-cta-inner h2 { font-size: clamp(1.7rem, 4vw, 2.4rem); font-weight: 900; font-style: italic; text-transform: uppercase; color: var(--ab-ink); margin: 0 0 .8rem; }
+        .ab-cta-inner p { color: var(--ab-dim); max-width: 56ch; margin: 0 auto 2rem; line-height: 1.8; font-size: .95rem; }
+        .ab-cta-inner .ab-links { justify-content: center; }
+
+        /* Sin logo del estudio: el nombre ocupa el centro de la cabecera. */
+        .logo-container .logo-text { text-transform: uppercase; font-style: italic; }
+
+        @media (max-width: 900px) {
+            .ab-feat { grid-template-columns: 1fr; }
+            .ab-shot { border-right: 0; border-bottom: 1px solid var(--ab-line); }
+        }
+        @media (max-width: 600px) {
+            .ab-hero { padding: 7rem 0 2.5rem; }
+            .ab-feat-body { padding: 1.6rem 1.4rem; }
+            .ab-cta-inner { padding: 2.2rem 1.4rem; }
+            .ab-shot { grid-template-rows: 220px 90px; }
+            .ab-shot--movil { grid-template-rows: 200px 180px; }
+            .ab-shot--solo { grid-template-rows: 220px; }
+            .logo-container .logo-text { font-size: 1rem; }
+        }
+
+        .ab-vmodal { width: min(92vw, 960px); margin: auto; padding: 0; border: 1px solid var(--ab-line); border-radius: 4px; background: var(--ab-raised); overflow: visible; }
+        .ab-vmodal::backdrop { background: rgba(4, 8, 16, .84); backdrop-filter: blur(6px); }
+        .ab-vmodal-inner { position: relative; aspect-ratio: 16 / 9; }
+        .ab-vmodal iframe { display: block; width: 100%; height: 100%; border: 0; background: #000; }
+        .ab-vclose { position: absolute; top: -17px; right: -17px; width: 42px; height: 42px; display: grid; place-items: center; border: 0; border-radius: 50%; background: var(--ab-cyan); color: #04121a; font-size: 1.6rem; font-weight: 700; line-height: 1; cursor: pointer; box-shadow: 0 6px 18px rgba(0, 0, 0, .55); z-index: 1; }
+        .ab-vclose:hover { filter: brightness(1.12); }
+        .ab-vclose:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+        @media (max-width: 560px) { .ab-vclose { top: 8px; right: 8px; } }
+
+        #primary-navigation[data-visible="true"] .nav-links > li:nth-child(1) > a { animation-delay: 40ms; }
+        #primary-navigation[data-visible="true"] .nav-links > li:nth-child(2) > a { animation-delay: 84ms; }
+        #primary-navigation[data-visible="true"] .nav-links > li:nth-child(3) > a { animation-delay: 128ms; }
+        #primary-navigation[data-visible="true"] .nav-links > li:nth-child(4) > a { animation-delay: 172ms; }
+        #primary-navigation[data-visible="true"] .nav-links > li:nth-child(5) > a { animation-delay: 216ms; }
+        #primary-navigation[data-visible="true"] .nav-links > li:nth-child(6) > a { animation-delay: 260ms; }
+        #primary-navigation[data-visible="true"] .nav-links > li:nth-child(7) > a { animation-delay: 304ms; }
+        #primary-navigation[data-visible="true"] .nav-links > li:nth-child(8) > a { animation-delay: 348ms; }
+        #primary-navigation[data-visible="true"] .nav-links > li:nth-child(9) > a { animation-delay: 392ms; }
+        #primary-navigation[data-visible="true"] .nav-links > li:nth-child(10) > a { animation-delay: 436ms; }
+        #primary-navigation[data-visible="true"] .nav-links > li:nth-child(11) > a { animation-delay: 480ms; }
+        #primary-navigation[data-visible="true"] .nav-links > li:nth-child(12) > a { animation-delay: 524ms; }
+        #primary-navigation[data-visible="true"] .nav-links > li:nth-child(13) > a { animation-delay: 568ms; }
+        #primary-navigation[data-visible="true"] .nav-links > li:nth-child(14) > a { animation-delay: 612ms; }
+        #primary-navigation[data-visible="true"] .nav-links > li:nth-child(15) > a { animation-delay: 656ms; }
+        #primary-navigation[data-visible="true"] .nav-links > li:nth-child(16) > a { animation-delay: 700ms; }
+        #primary-navigation[data-visible="false"] .nav-links > li:nth-child(1) > a { animation-delay: 420ms; }
+        #primary-navigation[data-visible="false"] .nav-links > li:nth-child(2) > a { animation-delay: 392ms; }
+        #primary-navigation[data-visible="false"] .nav-links > li:nth-child(3) > a { animation-delay: 364ms; }
+        #primary-navigation[data-visible="false"] .nav-links > li:nth-child(4) > a { animation-delay: 336ms; }
+        #primary-navigation[data-visible="false"] .nav-links > li:nth-child(5) > a { animation-delay: 308ms; }
+        #primary-navigation[data-visible="false"] .nav-links > li:nth-child(6) > a { animation-delay: 280ms; }
+        #primary-navigation[data-visible="false"] .nav-links > li:nth-child(7) > a { animation-delay: 252ms; }
+        #primary-navigation[data-visible="false"] .nav-links > li:nth-child(8) > a { animation-delay: 224ms; }
+        #primary-navigation[data-visible="false"] .nav-links > li:nth-child(9) > a { animation-delay: 196ms; }
+        #primary-navigation[data-visible="false"] .nav-links > li:nth-child(10) > a { animation-delay: 168ms; }
+        #primary-navigation[data-visible="false"] .nav-links > li:nth-child(11) > a { animation-delay: 140ms; }
+        #primary-navigation[data-visible="false"] .nav-links > li:nth-child(12) > a { animation-delay: 112ms; }
+        #primary-navigation[data-visible="false"] .nav-links > li:nth-child(13) > a { animation-delay: 84ms; }
+        #primary-navigation[data-visible="false"] .nav-links > li:nth-child(14) > a { animation-delay: 56ms; }
+        #primary-navigation[data-visible="false"] .nav-links > li:nth-child(15) > a { animation-delay: 28ms; }
+        #primary-navigation[data-visible="false"] .nav-links > li:nth-child(16) > a { animation-delay: 0ms; }
+    </style>
+</head>
+
+<body>
+    <header id="main-header" class="scrolled">
+        <div class="container nav-wrapper">
+            <a href="#top" class="logo-container"><span class="logo-text">Angelina Builes</span></a>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <div class="hamburger"></div>
+            </button>
+            <nav id="primary-navigation">
+                <ul class="nav-links">
+                    <li><a href="#bubblehero">Bubble Hero</a></li>
+                    <li><a href="#trident">Trident X Jungle</a></li>
+                    <li><a href="#ecovilla">Ecovilla 4D</a></li>
+                    <li><a href="#dominos">Domino&#x27;s Red vs Blue</a></li>
+                    <li><a href="#roadtest">Road Test Royale</a></li>
+                    <li><a href="#glitch">The Glitch Zone Wars</a></li>
+                    <li><a href="#guesswho">Guess Who</a></li>
+                    <li><a href="#interactivehome">Interactivehome</a></li>
+                    <li><a href="#metau">Meta U</a></li>
+                    <li><a href="#rooftop">Rooftop Visa</a></li>
+                    <li><a href="#lupa">Lupa</a></li>
+                    <li><a href="#80s">80´s Street Games</a></li>
+                    <li><a href="#mythpets">Myth Pets</a></li>
+                    <li><a href="#babyfresh">Baby Fresh: Sueños de Colores</a></li>
+                    <li><a href="#contacto">Contact</a></li>
+                    <li><a href="../es/" hreflang="es" lang="es">Español</a></li>
+                </ul>
+            </nav>
+            <a class="nav-cta" href="../es/" hreflang="es" lang="es">Español</a>
+        </div>
+    </header>
+
+    <main class="profile-page" id="top">
+        <section class="ab-hero">
+            <div class="container">
+                <div class="ab-hero-grid">
+                    <p class="ab-eyebrow">FortniteQA2024</p>
+                    <h1 class="ab-name">Angelina Builes</h1>
+                    <p class="ab-role">PORTFOLIO 2024</p>
+                    <p class="ab-meta">AngelinaBuilesC@gmail.com | 301 371 35 18 | Medellín - Colombia</p>
+                    <div class="ab-links">
+                        <a class="btn btn-primary" href="mailto:AngelinaBuilesC@gmail.com">Contact me</a>
+                        <a class="btn btn-secondary" href="https://www.linkedin.com/in/angelinabuiles" target="_blank" rel="noopener">LinkedIn</a>
+                        <a class="btn btn-secondary" href="https://github.com/Jelyblu" target="_blank" rel="noopener">GitHub</a>
+                        <a class="btn btn-secondary" href="https://dragonarkstudios.itch.io" target="_blank" rel="noopener">itch.io</a>
+                        <a class="btn btn-secondary" href="https://www.fiverr.com/angibuiles" target="_blank" rel="noopener">Fiverr</a>
+                        <a class="btn btn-secondary" href="https://dragonarkstudios.com/portfolio" target="_blank" rel="noopener">Studio portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ab-work">
+            <div class="container">
+                <h2 class="sr-only">PORTFOLIO</h2>
+                <div class="ab-featured">
+                    <article class="ab-feat" id="bubblehero">
+                        <div class="ab-shot ab-shot--movil">
+                            <div class="ab-shot-main"><a href="../assets/img/bubblehero-1.jpg" target="_blank" rel="noopener"><img src="../assets/img/bubblehero-1.jpg" alt="Bubble Hero, screenshot 1" loading="lazy"></a></div>
+                            <div class="ab-shot-strip"><a href="../assets/img/bubblehero-2.jpg" target="_blank" rel="noopener"><img src="../assets/img/bubblehero-2.jpg" alt="Bubble Hero, screenshot 2" loading="lazy"></a><a href="../assets/img/bubblehero-3.jpg" target="_blank" rel="noopener"><img src="../assets/img/bubblehero-3.jpg" alt="Bubble Hero, screenshot 3" loading="lazy"></a><a href="../assets/img/bubblehero-4.jpg" target="_blank" rel="noopener"><img src="../assets/img/bubblehero-4.jpg" alt="Bubble Hero, screenshot 4" loading="lazy"></a></div>
+                        </div>
+                        <div class="ab-feat-body">
+                            <h3>Bubble Hero</h3>
+                            <p class="ab-context">Own title · Android and Steam.</p>
+                            <div class="ab-desc">
+                                <p>I co-created Bubble Hero and led its quality assurance (QA): we took it from a 48-hour Global Game Jam prototype, which placed Top 6 at the UPB Medellín site, to a public release on Google Play and Steam.</p>
+                                <p>I tested and tuned the gameplay systems, progression and difficulty balance of a wave-survival game, so the curve felt fair from the very first run.</p>
+                            </div>
+                            <p class="ab-label">Applications used</p>
+                            <div class="ab-tech"><span>Unity</span><span>C#</span><span>Android</span><span>Steam</span></div>
+                            
+                            <a class="ab-out" href="https://store.steampowered.com/app/4517050/Bubble_Hero_The_Five_Elements/" target="_blank" rel="noopener">See it on Steam &rarr;</a>
+                            <a class="ab-out" href="https://play.google.com/store/apps/details?id=com.DragonarkStudios.BubbleHero" target="_blank" rel="noopener">See it on Google Play &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="ab-feat" id="trident">
+                        <div class="ab-shot">
+                            <div class="ab-shot-main"><a href="../assets/img/trident-1.jpg" target="_blank" rel="noopener"><img src="../assets/img/trident-1.jpg" alt="Trident X Jungle, screenshot 1" loading="lazy"></a></div>
+                            <div class="ab-shot-strip"><a href="../assets/img/trident-2.jpg" target="_blank" rel="noopener"><img src="../assets/img/trident-2.jpg" alt="Trident X Jungle, screenshot 2" loading="lazy"></a></div>
+                        </div>
+                        <div class="ab-feat-body">
+                            <h3>Trident X Jungle</h3>
+                            <p class="ab-context">Advertising Game</p>
+                            <div class="ab-desc">
+                                <p>I led quality assurance (QA) in the development of a unique island using the Fortnite creative editor for Trident, with the purpose of carrying out a worldwide event.</p>
+                                <p>During the process, I oversaw comprehensive testing to ensure the functionality and stability of the island, which includes a variety of minigames and culminates in an exciting final boss battle.</p>
+                                <p>This event not only strengthened the Trident brand presence, but also offered exciting prizes and activities.</p>
+                            </div>
+                            <p class="ab-label">Applications used</p>
+                            <div class="ab-tech"><span>HacknPlan</span><span>Google Sheets</span><span>Unreal Engine</span><span>Fortnite</span></div>
+                            <a class="ab-out" href="https://www.youtube.com/watch?v=4GxoQf84Vz8" data-yt="4GxoQf84Vz8" target="_blank" rel="noopener">Video &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="ab-feat" id="ecovilla">
+                        <div class="ab-shot">
+                            <div class="ab-shot-main"><a href="../assets/img/ecovilla-1.jpg" target="_blank" rel="noopener"><img src="../assets/img/ecovilla-1.jpg" alt="Ecovilla 4D, screenshot 1" loading="lazy"></a></div>
+                            <div class="ab-shot-strip"><a href="../assets/img/ecovilla-2.jpg" target="_blank" rel="noopener"><img src="../assets/img/ecovilla-2.jpg" alt="Ecovilla 4D, screenshot 2" loading="lazy"></a></div>
+                        </div>
+                        <div class="ab-feat-body">
+                            <h3>Ecovilla 4D</h3>
+                            <p class="ab-context">Augmented reality, virtual reality, web and mobile.</p>
+                            <div class="ab-desc">
+                                <p>I led the quality assurance (QA) team for Ecovilla 4D, a 360 macro-experience developed with Ecopetrol and UPB around a sustainable house of the future. I planned and oversaw functional and compatibility testing on augmented reality, virtual reality, web and mobile, verifying that the full journey, from the QR code to each experience, ran reliably on every platform.</p>
+                                <p>The ecosystem we tested included five web augmented reality apps that open from a QR code with no download, two virtual reality apps, an interactive mobile web journey with minigames, and a tablet app with 3D visualization.</p>
+                            </div>
+                            <p class="ab-label">Applications used</p>
+                            <div class="ab-tech"><span>Unity</span><span>Unreal Engine</span><span>WebAR</span><span>VR</span></div>
+                            <a class="ab-out" href="https://youtu.be/UNXelOfm4Hc" data-yt="UNXelOfm4Hc" target="_blank" rel="noopener">Video &rarr;</a>
+                            <a class="ab-out" href="https://jelyblu.github.io/EcoVillaVirtual/" target="_blank" rel="noopener">Try the web version &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="ab-feat" id="dominos">
+                        <div class="ab-shot ab-shot--solo">
+                            <div class="ab-shot-main"><a href="../assets/img/dominos-1.jpg" target="_blank" rel="noopener"><img src="../assets/img/dominos-1.jpg" alt="Domino&#x27;s Red vs Blue, screenshot 1" loading="lazy"></a></div>
+                        </div>
+                        <div class="ab-feat-body">
+                            <h3>Domino&#x27;s Red vs Blue</h3>
+                            <p class="ab-context">Branded Fortnite island.</p>
+                            <div class="ab-desc">
+                                <p>As QA lead and consultant at Dead Monkey, working alongside Look North World, I planned and ran testing for Domino&#x27;s island in Fortnite: team combat with restaurant capture, power-ups, progression and achievements.</p>
+                                <p>I ran functional, balance and stability testing, with two-stage fix verification before every delivery, so the island went live meeting Epic Games certification standards.</p>
+                            </div>
+                            <p class="ab-label">Applications used</p>
+                            <div class="ab-tech"><span>UEFN</span><span>Fortnite Creative</span></div>
+                            <a class="ab-out" href="https://www.fortnite.com/@twitchofficial/5570-6554-5104" target="_blank" rel="noopener">See the island &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="ab-feat" id="roadtest">
+                        <div class="ab-shot">
+                            <div class="ab-shot-main"><a href="../assets/img/roadtest-1.jpg" target="_blank" rel="noopener"><img src="../assets/img/roadtest-1.jpg" alt="Road Test Royale, screenshot 1" loading="lazy"></a></div>
+                            <div class="ab-shot-strip"><a href="../assets/img/roadtest-2.jpg" target="_blank" rel="noopener"><img src="../assets/img/roadtest-2.jpg" alt="Road Test Royale, screenshot 2" loading="lazy"></a></div>
+                        </div>
+                        <div class="ab-feat-body">
+                            <h3>Road Test Royale</h3>
+                            <p class="ab-context">Branded Fortnite island for The General.</p>
+                            <div class="ab-desc">
+                                <p>I led quality control for Road Test Royale, The General&#x27;s island in Fortnite: a driving course with timing and penalty systems, three cities and vehicle unlocks.</p>
+                                <p>I designed the test plans and verified that timing, penalties and progression worked consistently in every city before launch.</p>
+                            </div>
+                            <p class="ab-label">Applications used</p>
+                            <div class="ab-tech"><span>UEFN</span><span>Fortnite Creative</span></div>
+                            <a class="ab-out" href="https://www.fortnite.com/@twitchofficial/9524-2023-3031" target="_blank" rel="noopener">See the island &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="ab-feat" id="glitch">
+                        <div class="ab-shot">
+                            <div class="ab-shot-main"><a href="../assets/img/glitch-1.jpg" target="_blank" rel="noopener"><img src="../assets/img/glitch-1.jpg" alt="The Glitch Zone Wars, screenshot 1" loading="lazy"></a></div>
+                            <div class="ab-shot-strip"><a href="../assets/img/glitch-2.jpg" target="_blank" rel="noopener"><img src="../assets/img/glitch-2.jpg" alt="The Glitch Zone Wars, screenshot 2" loading="lazy"></a></div>
+                        </div>
+                        <div class="ab-feat-body">
+                            <h3>The Glitch Zone Wars</h3>
+                            <p class="ab-context">Branded Fortnite island for Twitch.</p>
+                            <div class="ab-desc">
+                                <p>I led testing for The Glitch Zone Wars, Twitch&#x27;s Fortnite island launched at TwitchCon 2024: squads of up to 16 players, objective-based rounds, random weapons and XP progression.</p>
+                                <p>I focused on weapon balance, round flow and server stability with full lobbies, so the event ran live without crashes.</p>
+                            </div>
+                            <p class="ab-label">Applications used</p>
+                            <div class="ab-tech"><span>UEFN</span><span>Fortnite Creative</span></div>
+                            <a class="ab-out" href="https://www.fortnite.com/@twitchofficial/1657-2632-4431" target="_blank" rel="noopener">See the island &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="ab-feat" id="guesswho">
+                        <div class="ab-shot ab-shot--solo">
+                            <div class="ab-shot-main"><a href="../assets/img/guesswho-1.jpg" target="_blank" rel="noopener"><img src="../assets/img/guesswho-1.jpg" alt="Guess Who, screenshot 1" loading="lazy"></a></div>
+                        </div>
+                        <div class="ab-feat-body">
+                            <h3>Guess Who</h3>
+                            <p class="ab-context">Hasbro collection in Fortnite.</p>
+                            <div class="ab-desc">
+                                <p>I managed quality control for the Hasbro collection islands in Fortnite, Guess Who and Connect Four, recreations of the classic board games developed by Look North World.</p>
+                                <p>I verified that each island was stable, performed well and met Epic Games standards before going live.</p>
+                            </div>
+                            <p class="ab-label">Applications used</p>
+                            <div class="ab-tech"><span>UEFN</span><span>Fortnite Creative</span></div>
+                            <a class="ab-out" href="https://www.fortnite.com/@looknorthworld/7387-6907-3174" target="_blank" rel="noopener">See the island &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="ab-feat" id="interactivehome">
+                        <div class="ab-shot">
+                            <div class="ab-shot-main"><a href="../assets/img/interactivehome-1.jpg" target="_blank" rel="noopener"><img src="../assets/img/interactivehome-1.jpg" alt="Interactivehome, screenshot 1" loading="lazy"></a></div>
+                            <div class="ab-shot-strip"><a href="../assets/img/interactivehome-2.jpg" target="_blank" rel="noopener"><img src="../assets/img/interactivehome-2.jpg" alt="Interactivehome, screenshot 2" loading="lazy"></a></div>
+                        </div>
+                        <div class="ab-feat-body">
+                            <h3>Interactivehome</h3>
+                            <p class="ab-context">Mobile application.</p>
+                            <div class="ab-desc">
+                                <p>I led the quality assurance (QA) team in the development of Interactivehome, an innovative platform that allows apartment buyers to visualize and customize their future home. I rigorously oversaw every stage of the process, implementing unit, integration, and usability testing to identify and correct bugs before launch. I collaborated closely with developers, ensuring that all fixes were implemented efficiently. I also maintained detailed test documentation, facilitating communication and guaranteeing compliance with the highest quality standards.</p>
+                            </div>
+                            <p class="ab-label">Applications used</p>
+                            <div class="ab-tech"><span>C#</span><span>Unity</span><span>HacknPlan</span><span>Google Sheets</span></div>
+                            <a class="ab-out" href="https://www.youtube.com/watch?v=4GxoQf84Vz8" data-yt="4GxoQf84Vz8" target="_blank" rel="noopener">Video &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="ab-feat" id="metau">
+                        <div class="ab-shot">
+                            <div class="ab-shot-main"><a href="../assets/img/metau-1.jpg" target="_blank" rel="noopener"><img src="../assets/img/metau-1.jpg" alt="Meta U, screenshot 1" loading="lazy"></a></div>
+                            <div class="ab-shot-strip"><a href="../assets/img/metau-2.jpg" target="_blank" rel="noopener"><img src="../assets/img/metau-2.jpg" alt="Meta U, screenshot 2" loading="lazy"></a><a href="../assets/img/metau-3.jpg" target="_blank" rel="noopener"><img src="../assets/img/metau-3.jpg" alt="Meta U, screenshot 3" loading="lazy"></a><a href="../assets/img/metau-4.jpg" target="_blank" rel="noopener"><img src="../assets/img/metau-4.jpg" alt="Meta U, screenshot 4" loading="lazy"></a></div>
+                        </div>
+                        <div class="ab-feat-body">
+                            <h3>Meta U</h3>
+                            <p class="ab-context">Virtual reality.</p>
+                            <div class="ab-desc">
+                                <p>At MetaU, a project developed for UPB VIRTUAL, I led quality assurance (QA) to ensure that the platform prepared and validated the knowledge of students in the induction course on virtual learning. I implemented and oversaw detailed testing to ensure the proper functioning of a series of minigames on Meta Quest 2, as well as space customization and the metaverse-style experience.</p>
+                            </div>
+                            <p class="ab-label">Applications used</p>
+                            <div class="ab-tech"><span>C#</span><span>Unity</span><span>HacknPlan</span><span>Oculus</span><span>Google Sheets</span></div>
+                            <a class="ab-out" href="https://www.youtube.com/watch?v=uDqV6fU3cC8" data-yt="uDqV6fU3cC8" target="_blank" rel="noopener">Video &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="ab-feat" id="rooftop">
+                        <div class="ab-shot">
+                            <div class="ab-shot-main"><a href="../assets/img/rooftop-1.jpg" target="_blank" rel="noopener"><img src="../assets/img/rooftop-1.jpg" alt="Rooftop Visa, screenshot 1" loading="lazy"></a></div>
+                            <div class="ab-shot-strip"><a href="../assets/img/rooftop-2.jpg" target="_blank" rel="noopener"><img src="../assets/img/rooftop-2.jpg" alt="Rooftop Visa, screenshot 2" loading="lazy"></a><a href="../assets/img/rooftop-3.jpg" target="_blank" rel="noopener"><img src="../assets/img/rooftop-3.jpg" alt="Rooftop Visa, screenshot 3" loading="lazy"></a><a href="../assets/img/rooftop-4.jpg" target="_blank" rel="noopener"><img src="../assets/img/rooftop-4.jpg" alt="Rooftop Visa, screenshot 4" loading="lazy"></a></div>
+                        </div>
+                        <div class="ab-feat-body">
+                            <h3>Rooftop Visa</h3>
+                            <p class="ab-context">Virtual Reality.</p>
+                            <div class="ab-desc">
+                                <p>In the development of the virtual environment in VR Chat for VISA, I led the quality assurance (QA) team and also participated in development. I optimized 3D models and conducted comprehensive testing to ensure that all features operated smoothly. This virtual space is designed for VISA to effectively host events and showcase its new products.</p>
+                            </div>
+                            <p class="ab-label">Applications used</p>
+                            <div class="ab-tech"><span>C#</span><span>Unity</span><span>HacknPlan</span><span>VRChat</span><span>Google Sheets</span></div>
+                            <a class="ab-out" href="https://www.youtube.com/watch?v=r58cvnKIQz0" data-yt="r58cvnKIQz0" target="_blank" rel="noopener">Video &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="ab-feat" id="lupa">
+                        <div class="ab-shot ab-shot--movil">
+                            <div class="ab-shot-main"><a href="../assets/img/lupa-1.jpg" target="_blank" rel="noopener"><img src="../assets/img/lupa-1.jpg" alt="Lupa, screenshot 1" loading="lazy"></a></div>
+                            <div class="ab-shot-strip"><a href="../assets/img/lupa-2.jpg" target="_blank" rel="noopener"><img src="../assets/img/lupa-2.jpg" alt="Lupa, screenshot 2" loading="lazy"></a><a href="../assets/img/lupa-3.jpg" target="_blank" rel="noopener"><img src="../assets/img/lupa-3.jpg" alt="Lupa, screenshot 3" loading="lazy"></a><a href="../assets/img/lupa-4.jpg" target="_blank" rel="noopener"><img src="../assets/img/lupa-4.jpg" alt="Lupa, screenshot 4" loading="lazy"></a><a href="../assets/img/lupa-5.jpg" target="_blank" rel="noopener"><img src="../assets/img/lupa-5.jpg" alt="Lupa, screenshot 5" loading="lazy"></a></div>
+                        </div>
+                        <div class="ab-feat-body">
+                            <h3>Lupa</h3>
+                            <p class="ab-context">Mobile application.</p>
+                            <div class="ab-desc">
+                                <p>Lupa is a research project where I led quality assurance (QA). We developed a platform that allows exploring the city of Medellín using a joystick or GPS.</p>
+                                <p>Users can create and retrieve memories in the form of text, images, or audio, which become heritage items. I implemented detailed testing to ensure an immersive and functional experience, allowing players to create routes between heritage items and memories for other users to explore.</p>
+                            </div>
+                            <p class="ab-label">Applications used</p>
+                            <div class="ab-tech"><span>C#</span><span>Unity</span><span>HacknPlan</span><span>Google Sheets</span></div>
+                            <a class="ab-out" href="https://youtu.be/YpwlZE0v04w" data-yt="YpwlZE0v04w" target="_blank" rel="noopener">Video &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="ab-feat" id="80s">
+                        <div class="ab-shot">
+                            <div class="ab-shot-main"><a href="../assets/img/80s-1.jpg" target="_blank" rel="noopener"><img src="../assets/img/80s-1.jpg" alt="80´s Street Games, screenshot 1" loading="lazy"></a></div>
+                            <div class="ab-shot-strip"><a href="../assets/img/80s-2.jpg" target="_blank" rel="noopener"><img src="../assets/img/80s-2.jpg" alt="80´s Street Games, screenshot 2" loading="lazy"></a><a href="../assets/img/80s-3.jpg" target="_blank" rel="noopener"><img src="../assets/img/80s-3.jpg" alt="80´s Street Games, screenshot 3" loading="lazy"></a></div>
+                        </div>
+                        <div class="ab-feat-body">
+                            <h3>80´s Street Games</h3>
+                            <p class="ab-context">Desktop application.</p>
+                            <div class="ab-desc">
+                                <p>80s Street Game is a game with a pixel art aesthetic that transports you to the 1980s, when retro games were beginning to gain popularity. The player&#x27;s goal is to sell copies of games in cubic formats to characters who approach their shop, and find the perfect game for each of them. However, it is also necessary to stay alert for police officers looking to catch you for piracy and avoid selling them illegal copies.</p>
+                            </div>
+                            <p class="ab-label">Applications used</p>
+                            <div class="ab-tech"><span>C#</span><span>Unity</span><span>HacknPlan</span><span>Google Sheets</span></div>
+                            <a class="ab-out" href="https://www.youtube.com/watch?v=4xa75kQLs4A" data-yt="4xa75kQLs4A" target="_blank" rel="noopener">Video &rarr;</a>
+                            <a class="ab-out" href="https://aseisgames.itch.io/80s-street-games" target="_blank" rel="noopener">Download it here &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="ab-feat" id="mythpets">
+                        <div class="ab-shot ab-shot--movil">
+                            <div class="ab-shot-main"><a href="../assets/img/mythpets-1.jpg" target="_blank" rel="noopener"><img src="../assets/img/mythpets-1.jpg" alt="Myth Pets, screenshot 1" loading="lazy"></a></div>
+                            <div class="ab-shot-strip"><a href="../assets/img/mythpets-2.jpg" target="_blank" rel="noopener"><img src="../assets/img/mythpets-2.jpg" alt="Myth Pets, screenshot 2" loading="lazy"></a><a href="../assets/img/mythpets-3.jpg" target="_blank" rel="noopener"><img src="../assets/img/mythpets-3.jpg" alt="Myth Pets, screenshot 3" loading="lazy"></a><a href="../assets/img/mythpets-4.jpg" target="_blank" rel="noopener"><img src="../assets/img/mythpets-4.jpg" alt="Myth Pets, screenshot 4" loading="lazy"></a><a href="../assets/img/mythpets-5.jpg" target="_blank" rel="noopener"><img src="../assets/img/mythpets-5.jpg" alt="Myth Pets, screenshot 5" loading="lazy"></a></div>
+                        </div>
+                        <div class="ab-feat-body">
+                            <h3>Myth Pets</h3>
+                            <p class="ab-context">Mobile application.</p>
+                            <div class="ab-desc">
+                                <p>MYTH PETS is a mobile game developed to teach Greek mythology through collecting mythological items.</p>
+                                <p>I led quality assurance (QA), overseeing comprehensive testing to guarantee that all features, from minigames to the item collection, operated smoothly.</p>
+                                <p>My work ensured an educational and entertaining experience for users within the educational technology (edutech) framework.</p>
+                            </div>
+                            <p class="ab-label">Applications used</p>
+                            <div class="ab-tech"><span>C#</span><span>Unity</span><span>HacknPlan</span><span>Google Sheets</span></div>
+                            <a class="ab-out" href="https://www.youtube.com/watch?v=yEkY36VHkOU" data-yt="yEkY36VHkOU" target="_blank" rel="noopener">Video &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="ab-feat" id="babyfresh">
+                        <div class="ab-shot ab-shot--movil">
+                            <div class="ab-shot-main"><a href="../assets/img/babyfresh-1.jpg" target="_blank" rel="noopener"><img src="../assets/img/babyfresh-1.jpg" alt="Baby Fresh: Sueños de Colores, screenshot 1" loading="lazy"></a></div>
+                            <div class="ab-shot-strip"><a href="../assets/img/babyfresh-2.jpg" target="_blank" rel="noopener"><img src="../assets/img/babyfresh-2.jpg" alt="Baby Fresh: Sueños de Colores, screenshot 2" loading="lazy"></a></div>
+                        </div>
+                        <div class="ab-feat-body">
+                            <h3>Baby Fresh: Sueños de Colores</h3>
+                            <p class="ab-context">Live physical-digital installation.</p>
+                            <div class="ab-desc">
+                                <p>I built and tested Sueños de Colores, a physical-digital installation for Baby Fresh: children color a teddy bear on paper, put it into an oven-shaped installation, and watch their own drawing come to life in a shared virtual world on a big screen.</p>
+                                <p>Testing focused on what a live installation does not forgive: latency, so each child connected what they drew with what they saw on screen, and tolerance for real drawings made outside the lines, without the system failing in front of an audience.</p>
+                            </div>
+                            <p class="ab-label">Applications used</p>
+                            <div class="ab-tech"><span>Unity</span><span>Real-time</span></div>
+                            
+                            <a class="ab-out" href="https://www.instagram.com/reel/DP_5Ftrjhip" target="_blank" rel="noopener">Watch the video &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="ab-cta" id="contacto">
+            <div class="container">
+                <div class="ab-cta-inner ab-notch">
+                    <h2>THANK YOU!</h2>
+                    <p>AngelinaBuilesC@gmail.com | 301 371 35 18 | Medellín - Colombia</p>
+                    <div class="ab-links">
+                        <a class="btn btn-primary" href="mailto:AngelinaBuilesC@gmail.com">AngelinaBuilesC@gmail.com</a>
+                        <a class="btn btn-secondary" href="tel:+573013713518">301 371 35 18</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>AngelinaBuilesC@gmail.com | 301 371 35 18 | Medellín - Colombia</p>
+        </div>
+    </footer>
+
+    <dialog id="ab-vmodal" class="ab-vmodal">
+        <div class="ab-vmodal-inner">
+            <button type="button" class="ab-vclose" data-ab-vclose>
+                <span aria-hidden="true">&times;</span>
+                <span class="sr-only">Close video</span>
+            </button>
+            <iframe title="Video" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </dialog>
+
+    <script>
+        (function () {
+            // Menú: el mismo mecanismo que usa main.js en Dragonark.
+            var toggle = document.querySelector('.mobile-nav-toggle');
+            var nav = document.getElementById('primary-navigation');
+            function setMenu(open) {
+                nav.setAttribute('data-visible', open ? 'true' : 'false');
+                toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+            }
+            toggle.addEventListener('click', function () {
+                setMenu(nav.getAttribute('data-visible') !== 'true');
+            });
+            nav.querySelectorAll('a').forEach(function (a) {
+                a.addEventListener('click', function () { setMenu(false); });
+            });
+            document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+
+            // Video en ventana: YouTube sin cookies. Sin JS, el enlace abre YouTube.
+            var modal = document.getElementById('ab-vmodal');
+            if (!modal || !modal.showModal) return;
+            var frame = modal.querySelector('iframe');
+            document.querySelectorAll('a[data-yt]').forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+                    e.preventDefault();
+                    frame.src = 'https://www.youtube-nocookie.com/embed/' + link.getAttribute('data-yt') + '?autoplay=1&rel=0';
+                    modal.showModal();
+                });
+            });
+            modal.querySelector('[data-ab-vclose]').addEventListener('click', function () { modal.close(); });
+            modal.addEventListener('click', function (e) { if (e.target === modal) modal.close(); });
+            modal.addEventListener('close', function () { frame.src = 'about:blank'; });
+        })();
+    </script>
+</body>
+
+</html>
